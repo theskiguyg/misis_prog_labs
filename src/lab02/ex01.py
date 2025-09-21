@@ -9,7 +9,7 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
             mn = nums[i]
         if nums[i] > mx:
             mx = nums[i]
-    return(tuple[mn, mx])
+    return tuple([mn, mx])
 print(min_max(nums))
 
 nums1 = []
