@@ -59,4 +59,28 @@ print(f'Длина (символов): {len(name.strip())}')
 ![Вывод задание 5](./images/lab01/Задание5.png)
 
 
+# ЛАБОРАТОРНАЯ РАБОТА №2
+
+
+# Задание 1 - arrays
+
+# 1.1 def min_max
+
+```python
+def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
+    if len(nums) == 0:
+        return ValueError
+    mn = 9e6 
+    mx = -9e6 
+    for i in range(len(nums)):
+        if nums[i] < mn:
+            mn = nums[i]
+        if nums[i] > mx:
+            mx = nums[i]
+    return tuple([mn, mx])
+print(min_max())
+```
+
+
+
 
