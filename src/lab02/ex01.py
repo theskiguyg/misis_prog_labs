@@ -1,4 +1,3 @@
-nums = []
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     if len(nums) == 0:
         return ValueError
@@ -10,16 +9,16 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
         if nums[i] > mx:
             mx = nums[i]
     return tuple([mn, mx])
-print(min_max(nums))
+print(min_max())
 
-nums1 = []
+
 def unique_sorted(nums1: list[float | int]) -> list[float | int]:
     unique_nums = set(nums1)
     return sorted(unique_nums)
-print(unique_sorted(nums1))
+print(unique_sorted())
 
 
-mat = []
+
 def flatten(mat: list[list | tuple]) -> list:
     arr = list()
     for a in mat:
@@ -28,6 +27,6 @@ def flatten(mat: list[list | tuple]) -> list:
         for el in a:
             arr.append(el)
     return arr 
-print(flatten(mat))
+print(flatten())
 
 
