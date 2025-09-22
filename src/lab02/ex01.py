@@ -28,5 +28,3 @@ def flatten(mat: list[list | tuple]) -> list:
             arr.append(el)
     return arr 
 print(flatten())
-
-
