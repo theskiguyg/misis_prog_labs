@@ -62,9 +62,9 @@ print(f'Длина (символов): {len(name.strip())}')
 # ЛАБОРАТОРНАЯ РАБОТА №2
 
 
-# Задание 1 - arrays
+# Задание 1 -> arrays
 
-# 1.1 def min_max
+# 1 min_max
 
 ```python
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
@@ -80,6 +80,96 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     return tuple([mn, mx])
 print(min_max())
 ```
+![Вывод задание 1.1](./images/lab02/1.1.png)
+
+# 2 unique_sorted
+
+```python
+def unique_sorted(nums1: list[float | int]) -> list[float | int]:
+    unique_nums = set(nums1)
+    return sorted(unique_nums)
+print(unique_sorted())
+```
+![Вывод задание 1.2](./images/lab02/1.2.png)
+
+# 3 flatten
+
+```python
+def flatten(mat: list[list | tuple]) -> list:
+    arr = list()
+    for a in mat:
+        if not(isinstance(a, list) or isinstance(a, tuple)):
+            return TypeError
+        for el in a:
+            arr.append(el)
+    return arr 
+print(flatten())
+```
+![Вывод задание 1.3](./images/lab02/1.3.png)
+
+
+# Задание 2 -> matrix
+
+# Вспомогательная функция 
+## С ее помощью проверяю длину строк матрицы. Если длина строк разная, значит матрица - рваная, возвращаю ValueError.
+
+```python
+def dliny(mat):
+    if any(len(mat[0]) != len(mat[s]) for s in range(len(mat))):
+        return False
+    return True
+```
+
+# 1 transpose
+
+```python
+def transpose(mat: list[list[float | int]]) -> list[list]:
+    if len(mat) == 0:
+        return []
+    if dliny(mat) == False:
+        return ValueError
+    newmat = [[0 for stro in range(len(mat))] for stol in range(len(mat[0]))]
+    for strok in range(len(mat)):
+        for stolb in range(len(mat[strok])):
+            newmat[stolb][strok] = mat[strok][stolb]
+    return newmat
+
+print(transpose())
+```
+![Вывод задание 2.1](./images/lab02/2.1.png)
+
+# 2 row_sums
+
+```python
+def row_sums(mat: list[list[float | int]]) -> list[float]:
+    if len(mat) == 0:
+        return []
+    if dliny(mat) == False:
+        return ValueError
+    sums = []
+    for i in mat:
+        sums.append(sum(i))
+    return sums
+
+print(row_sums())
+```
+![Вывод задание 2.2](./images/lab02/2.2.png)
+
+# 3 col_sums
+
+```python
+def col_sums(mat: list[list[float | int]]) -> list[float]:
+    if len(mat) == 0:
+        return []
+    if dliny(mat) == False:
+        return ValueError
+    sums = []
+    row_len = len(mat[0])
+    return [sum(row[j] for row in mat) for j in range(row_len)]
+
+print(col_sums())
+```
+![Вывод задание 2.3](./images/lab02/2.3.png)
 
 
 
