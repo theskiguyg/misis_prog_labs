@@ -54,7 +54,7 @@ print(f"{m // 60:02d}:{m % 60:02d}")
 ```python
 name = input('ФИО: ')
 print(f'Инициалы: {''.join([i[0].upper() for i in name.split()])}.')
-print(f'Длина (символов): {len(name.strip())}')
+print(f'Длина (символов): {len(''.join(name.split())) + 2}')
 ```
 ![Вывод задание 5](./images/lab01/Задание5.png)
 
