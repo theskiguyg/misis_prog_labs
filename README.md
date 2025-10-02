@@ -159,17 +159,13 @@ print(row_sums())
 
 ```python
 def col_sums(mat: list[list[float | int]]) -> list[float]:
-    if len(mat) == 0:
-        return []
     if dliny(mat) == False:
         return ValueError
-    sums = []
-    row_len = len(mat[0])
-    return [sum(row[j] for row in mat) for j in range(row_len)]
+    return row_sums(transpose(mat))
 
 print(col_sums())
 ```
-![Вывод задание 2.3](./images/lab02/2.3.png)
+![Вывод задание 2.3.1](./images/lab02/2.2.1.png)
 
 
 # Задание 3 -> tuples
