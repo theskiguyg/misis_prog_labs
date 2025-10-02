@@ -15,7 +15,6 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
             newmat[stolb][strok] = mat[strok][stolb]
     return newmat
 
-print(transpose())
 
 
 def row_sums(mat: list[list[float | int]]) -> list[float]:
@@ -28,16 +27,8 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
         sums.append(sum(i))
     return sums
 
-print(row_sums())
 
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
-    if len(mat) == 0:
-        return []
-    if dliny(mat) == False:
-        return ValueError
-    sums = []
-    row_len = len(mat[0])
-    return [sum(row[j] for row in mat) for j in range(row_len)]
-
+    return row_sums(transpose(mat))
 print(col_sums())
