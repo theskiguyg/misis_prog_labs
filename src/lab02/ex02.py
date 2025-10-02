@@ -30,5 +30,11 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
 
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
+    if dliny(mat) == False:
+        return ValueError
     return row_sums(transpose(mat))
-print(col_sums())
+
+print(col_sums ([[1, 2, 3], [4, 5, 6]]))
+print(col_sums ([[-1, 1], [10, -10]]))
+print(col_sums ([[0, 0], [0, 0]]))
+print(col_sums ([[1, 2], [3]]))
