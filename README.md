@@ -258,8 +258,8 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     return sorted(freq.items(), key=lambda x: (-x[1], x[0]))[:n]
 ```
 
-## Вывод результата в `src/lab03/A.py`:
-## (запуск из терминала `python3 -m src.lab03.A`)
+### Вывод результата в `src/lab03/A.py`.
+### Запуск из терминала `python3 -m src.lab03.A`. 
 
 ```python
 from src.lib.text import normalize, tokenize, top_n, count_freq
