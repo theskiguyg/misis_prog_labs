@@ -206,7 +206,8 @@ print(format_record(()))
 
 
 ## Задание A -> `src/lib/text.py`
-## Реализую функции в модуле `src/lib/text.py`. Далее вывожу результат в `src/lab03/A.py`. 
+## Реализую функции в модуле `src/lib/text.py`. 
+## Далее вывожу результат в `src/lab03/A.py`. 
 
 ### normalize
 
@@ -257,7 +258,8 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     return sorted(freq.items(), key=lambda x: (-x[1], x[0]))[:n]
 ```
 
-## Вывод результата в `src/lab03/A.py` (запуск из терминала `python3 -m src.lab03.A`):
+## Вывод результата в `src/lab03/A.py`:
+## (запуск из терминала `python3 -m src.lab03.A`)
 
 ```python
 from src.lib.text import normalize, tokenize, top_n, count_freq
@@ -284,7 +286,8 @@ print(top_n(count_freq(["bb", "aa", "bb", "aa", "cc"]), n=2))
 
 ## Задание B -> `src/lab03/B_text_stats`
 
-### Читаем текст из stdin `src/lab03/input.txt`, вызваем функции из `src/lib/text.py`, выводим статистику. Запуск из терминала: `python3 -m src.lab03.B_text_stats < src/lab03/input.txt`. 
+### Читаем текст из stdin `src/lab03/input.txt`, вызваем функции из `src/lib/text.py`, выводим статистику. 
+### Запуск из терминала: `python3 -m src.lab03.B_text_stats < src/lab03/input.txt`. 
 
 ```python
 import sys
