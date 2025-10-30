@@ -394,9 +394,3 @@ for word, count in top_n(freq, 5):
 
 ### Отчет CSV -> `data/lab04/report.csv`:
 ![Вывод отчет CSV](./images/lab04/report_csv.png)
-
-
-
-
-
-
