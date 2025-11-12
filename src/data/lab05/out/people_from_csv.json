@@ -28,5 +28,10 @@
     "name": "Egor",
     "age": "17",
     "city": "Moscow"
+  },
+  {
+    "name": "Den",
+    "age": "15",
+    "city": "London"
   }
 ]
