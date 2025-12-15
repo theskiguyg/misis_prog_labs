@@ -11,6 +11,3 @@ print(f"Уникальных слов: {len(set(tokens))}")
 print("Топ-5:")
 for w, c in top:
     print(f"{w}:{c}")
-
-
-    

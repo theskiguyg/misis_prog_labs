@@ -23,5 +23,10 @@
     "name": "Andrey",
     "age": 27,
     "city": "Novosibirsk"
+  },
+  {
+    "name": "Egor",
+    "age": 27,
+    "city": "Morocco"
   }
 ]

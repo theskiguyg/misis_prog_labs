@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 from openpyxl import Workbook
 
+
 def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     cp = Path(csv_path)
     if cp.suffix != ".csv":
@@ -12,7 +13,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     with open(csv_path, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
         rows = list(reader)
-    if len(rows)==0:
+    if len(rows) == 0:
         raise ValueError("Пустой CSV")
 
     wb = Workbook()
