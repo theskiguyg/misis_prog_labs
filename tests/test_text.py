@@ -50,4 +50,3 @@ def test_count_freq_empty_tokens():
 
 def test_top_n_empty_freq():
     assert top_n({}, 5) == []
-
