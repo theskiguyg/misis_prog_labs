@@ -674,14 +674,14 @@ if __name__ == "__main__":
 ```
 
 #### Результат:
-Конвертация `JSON -> CSV`
+1. Конвертация `JSON -> CSV`
 Команда:
 `python3 -m src.lab06.cli_convert json2csv --in src/data/lab05/samples/people.json --out src/data/lab05/out/people_from_json.csv`
-Исходная директория `src/data/lab05/samples/people.json`:
+ Исходная директория `src/data/lab05/samples/people.json`:
 ![people.json](./images/lab06/people_json.png)
-Результат в `src/data/lab05/out/people_from_json.csv`:
+ Результат в `src/data/lab05/out/people_from_json.csv`:
 ![people_from_json.csv](./images/lab06/people_from_json.png)
-Аналогично и для `csv2json` & `csv2xlsx`:
+2. Аналогично и для `csv2json` & `csv2xlsx`:
  -`python3 -m src.lab06.cli_convert csv2json --in src/data/lab05/samples/people.csv --out src/data/lab05/out/people_from_csv.json`
  -`python3 -m src.lab06.cli_convert csv2xlsx --in src/data/lab05/samples/cities.csv --out src/data/lab05/out/cities.xlsx`
 
