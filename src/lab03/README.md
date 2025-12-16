@@ -101,4 +101,4 @@ for w, c in top:
     print(f"{w}:{c}")
 ```
 
-![Вывод 3.B](../../images/lab03/B_text_stats.png)
+![Вывод 3.B](../../images/lab03/B_text_stats.png) 
