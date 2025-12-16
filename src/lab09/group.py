@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 from src.lab08.models import Student
 
+
 class Group:
     def __init__(self, storage_path: str):
         self.path = Path(storage_path)
