@@ -1,0 +1,26 @@
+[
+  {
+    "fio": "Zagrebin Egor Denisovich",
+    "birthdate": "2008-02-10",
+    "group": "BIVT-25-4",
+    "gpa": 5.0
+  },
+  {
+    "fio": "Perreira Alex UFCovich",
+    "birthdate": "2001-01-10",
+    "group": "BIVT-25-1",
+    "gpa": 4.2
+  },
+  {
+    "fio": "Volkanovski Alex MMAovich",
+    "birthdate": "2012-02-12",
+    "group": "BIVT-25-2",
+    "gpa": 3.0
+  },
+  {
+    "fio": "McGregorov Connor Michailovich",
+    "birthdate": "2025-10-18",
+    "group": "BIVT-25-3",
+    "gpa": 4.6
+  }
+]
