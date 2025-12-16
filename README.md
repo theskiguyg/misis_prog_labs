@@ -1,6 +1,7 @@
 # Programming & Algorithmization repository
 
 Owner -> Zagrebin Egor 
+
 Group -> BIVT-25-4
 
 This repository contains laboratory works for Python programming course.
