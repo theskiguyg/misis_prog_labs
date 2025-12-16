@@ -64,7 +64,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 #### Перевод `JSON -> CSV`:
 
 Исходный `src/data/lab05/samples/people.json`
-![Входной people_json](./images/lab05/sample/people_json.png)
+![Входной people_json](../../images/lab05/sample/people_json.png)
 
 Результат перевода в CSV -> `src/data/lab05/out/people_from_json.csv`:
 ![Результат перевода people_from_json](../../images/lab05/out/people_from_json_csv.png)
